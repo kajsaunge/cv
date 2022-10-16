@@ -1,5 +1,6 @@
 import Section from "../Section/Section";
-import styles from "./Work.module.css";
+import styles from "./Cases.module.css";
+import content from "../../pages/api/content.json";
 
 // section#projectsListContainer.projects-listing
 //     -var ProjectsList = []
@@ -13,20 +14,22 @@ import styles from "./Work.module.css";
 //                 p= project.tags
 //             .projects-listing-item__thumb
 //                 img(src= project.thumb, alt= project.thumbAlt)
-const Work = () => {
+const Cases = () => {
+  const { cases, grid } = styles;
+  const { title, description, imgSrc, imgAlt } = content.cases;
   return (
     <>
       <Section
-        title="Work"
-        description="Mixed Projects"
-        imageAlt="Illustration of digital devices"
-        imageSrc="/work-img.png"
+        title={title}
+        description={description}
+        imageAlt={imgAlt}
+        imageSrc={imgSrc}
       >
-        <h3 className={styles.work}>Project cases </h3>
-        <div className={styles.grid}></div>
+        <h3 className={cases}>Project cases </h3>
+        <div className={grid}></div>
       </Section>
     </>
   );
 };
 
-export default Work;
+export default Cases;

@@ -1,33 +1,38 @@
 import Image from "next/image.js";
 import styles from "./Navigation.module.css";
+import content from "../../pages/api/content.json";
 
 const Navigation = () => {
+  const { navigation, homeLink, homeLinkLogo, navigationLink, siteHeader } =
+    styles;
+  const { id, homeUrl, imgSrc, imgAlt, about, cases, cv, contact } =
+    content.navigation;
   return (
     <div>
-      <nav id="main-nav" className={styles.navigation}>
-        <a className={styles.homeLink} href="index.html#body">
+      <nav id={id} className={navigation}>
+        <a className={homeLink} href={homeUrl}>
           <Image
-            src="/kajsa-unge-logo.svg"
-            alt="Kajsa Unge Logo"
+            src={imgSrc}
+            alt={imgAlt}
             width={30}
             height={30}
-            className={styles.homeLinkLogo}
+            className={homeLinkLogo}
           />
         </a>
-        <a className={styles.navigationLink} href="index.html#about">
-          About
+        <a className={navigationLink} href="index.html#about">
+          {about}
         </a>
-        <a className={styles.navigationLink} href="index.html#project">
-          Work
+        <a className={navigationLink} href="index.html#project">
+          {cases}
         </a>
-        <a className={styles.navigationLink} href="index.html#cv">
-          Cv
+        <a className={navigationLink} href="index.html#cv">
+          {cv}
         </a>
-        <a className={styles.navigationLink} href="index.html#contact">
-          Contact
+        <a className={navigationLink} href="index.html#contact">
+          {contact}
         </a>
       </nav>
-      <header className={styles.siteHeader}></header>
+      <header className={siteHeader}></header>
     </div>
   );
 };

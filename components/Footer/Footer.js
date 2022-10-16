@@ -1,48 +1,50 @@
 import styles from "./Footer.module.css";
+import content from "../../pages/api/content.json";
 
 const Footer = () => {
-  const { footerLink, codepen } = styles;
+  const { footer, footerLink, codep, linked, insta, random, convert } = styles;
+  const { codepen, linkedin, instagram, randomize, converter } = content.footer;
   return (
-    <footer className={styles.footer}>
+    <footer className={footer}>
       <a
-        href="https://codepen.io/kajsaunge/"
+        href={codepen.url}
         target="_blank"
         rel="noopener noreferrer"
-        className={[footerLink, codepen].join(" ")}
+        className={[footerLink, codep].join(" ")}
       >
-        Codepen
+        {codepen.title}
       </a>
       <a
-        href="https://se.linkedin.com/in/kajsaunge"
+        href={linkedin.url}
         target="_blank"
         rel="noopener noreferrer"
-        className={[styles.footerLink, styles.linkedin].join(" ")}
+        className={[footerLink, linked].join(" ")}
       >
-        LinkedIn
+        {linkedin.title}
       </a>
       <a
-        href="https://instagram.com/kajsaunge/"
+        href={instagram.url}
         target="_blank"
         rel="noopener noreferrer"
-        className={[styles.footerLink, styles.insta].join(" ")}
+        className={[footerLink, insta].join(" ")}
       >
-        Insta
+        {instagram.title}
       </a>
       <a
-        href="http://randomize.kajsaunge.se/"
+        href={randomize.url}
         target="_blank"
         rel="noopener noreferrer"
-        className={[styles.footerLink, styles.random].join(" ")}
+        className={[footerLink, random].join(" ")}
       >
-        Randomize
+        {randomize.title}
       </a>
       <a
-        href="http://converter.kajsaunge.se/"
+        href={converter.url}
         target="_blank"
         rel="noopener noreferrer"
-        className={[styles.footerLink, styles.convert].join(" ")}
+        className={[footerLink, convert].join(" ")}
       >
-        Converter
+        {converter.title}
       </a>
     </footer>
   );

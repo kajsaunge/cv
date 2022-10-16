@@ -1,23 +1,32 @@
 import Section from "../Section/Section";
 import styles from "./Contact.module.css";
+import content from "../../pages/api/content.json";
 
 const Contact = () => {
+  const { contactLinks } = styles;
+  const {
+    title,
+    description,
+    imgSrc,
+    imgAlt,
+    phonenumber,
+    phoneUrl,
+    email,
+    mailTo,
+  } = content.contact;
   return (
     <>
       <Section
-        title="Contact"
-        description="Say hello"
-        imageAlt="Illustration of an old shool phone"
-        imageSrc="/contact-img.png"
+        title={title}
+        description={description}
+        imageAlt={imgAlt}
+        imageSrc={imgSrc}
       >
-        <a href="tel:+46703987208" className={styles.contactLinks}>
-          +46 (0)70 3987 208
+        <a href={phoneUrl} className={contactLinks}>
+          {phonenumber}
         </a>
-        <a
-          href="mailto:hej@kajsaunge.se?subject=Mail from Kajsa Unges site"
-          className={styles.contactLinks}
-        >
-          hej@kajsaunge.se
+        <a href={mailTo} className={contactLinks}>
+          {email}
         </a>
       </Section>
     </>

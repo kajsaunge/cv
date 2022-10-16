@@ -1,5 +1,6 @@
 import Section from "../Section/Section";
 import styles from "./Cv.module.css";
+import content from "../../pages/api/content.json";
 
 // .cv-content
 //     -var experienceList = []
@@ -43,15 +44,17 @@ import styles from "./Cv.module.css";
 //                 else
 //                     a.link-yellow(href= educationOnline.schoolLink target="_blank")= educationOnline.school
 const Cv = () => {
+  const { cv } = styles;
+  const { title, description, imgSrc, imgAlt } = content.cv;
   return (
     <>
       <Section
-        title="Cv"
-        description="& work experience"
-        imageAlt="Illustration of tools"
-        imageSrc="/cv-img.png"
+        title={title}
+        description={description}
+        imageAlt={imgAlt}
+        imageSrc={imgSrc}
       >
-        <h3 className={styles.cv}>List of work and edu </h3>
+        <h3 className={cv}>List of work and edu </h3>
       </Section>
     </>
   );

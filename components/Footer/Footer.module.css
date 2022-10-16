@@ -33,10 +33,10 @@
     padding-right: 18%;
   }
 }
-.codepen {
+.codep {
   background: url('../../static/icon-codepen.svg') top center no-repeat;
 }
-.linkedin {
+.linked {
   background: url('../../static/icon-linked.svg') top center no-repeat;
 }
 .insta {
