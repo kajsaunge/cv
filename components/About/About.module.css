@@ -1,0 +1,40 @@
+.aboutContentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 80px 0 70px;
+  background-color: var(--grey-dark);
+  color: var(--white);
+}
+.aboutContent {
+  width: 60%;
+}
+
+.aboutText {
+  width: 100%;
+  padding-top: 20px;
+  color: var(--white);
+    /* @include mf-medium {
+      width: 70%;
+    }
+    @include mf-large {
+      width: 50%;
+    } */
+}
+.sectionImage {
+  display: block;
+  width: 80%;
+  max-width: 100%;
+  height: auto;
+  zoom: 80%;
+  min-height: 1px;
+  padding: 0 5%;
+  margin-top: 80px;
+}
+/* @include mf-medium {
+    width: 50%;
+}
+@include mf-large {
+    width: 50%;
+} */

@@ -1,0 +1,77 @@
+.sectionWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 50px 0 70px;
+    background-color: var(--white);
+    color: var(--grey-dark);
+    margin: 80 0;
+    padding-bottom: 30px;
+}
+.sectionWrapperDark {
+    background-color: var(--grey-dark);
+    color: var(--white);
+}
+.sectionLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+.sectionLinksPine {
+  color: darken(var(--pine), 5%);
+}
+.sectionLinksPine:hover {
+  color: var(--pine);
+  text-decoration: underline;
+}
+.sectionImage {
+  display: block;
+  width: 80%;
+  max-width: 100%;
+  height: auto;
+  /* zoom: 80%; */
+  min-height: 1px;
+  padding: 0 5%;
+  margin-top: 80px;
+}
+.sectionTitle {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+/* .section-title--white {
+  color:  var(--white);
+} */
+.sectionDescription {
+  text-transform: uppercase;
+}
+.sectionSubDescription {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+/* .section-description--white {
+  color:  var(--white);
+} */
+
+
+@media (min-width: 62.5em) { 
+  .sectionImage {
+    width: 50%;
+  }
+}
+@media (min-width: 103.750em) { 
+  .sectionImage {
+    width: 50%;
+  }
+  .sectionTitle {
+    font-size: 75px; font-size: 7.5rem;
+  }
+  .sectionDescription {
+    font-size: 25px; font-size: 2.5rem;
+  }
+}
