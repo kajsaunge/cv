@@ -23,6 +23,7 @@ const Work = () => {
         imageSrc="/work-img.png"
       >
         <h3 className={styles.work}>Project cases </h3>
+        <div className={styles.grid}></div>
       </Section>
     </>
   );

@@ -42,7 +42,7 @@ const About = () => {
             Kajsa Unge
           </p> */}
           {/* <p>UI/UX designer | Frontend developer | Illustrator</p> */}
-          <p className={styles.aboutText}>
+          {/* <p className={styles.aboutText}>
             I'm what they call a hybrid, a multi talented person. My passions
             are broad but somehow they always manage to relate to each other.
             Design is my premier and is where I have my roots. That said,
@@ -66,7 +66,7 @@ const About = () => {
             couple of times per year I leave the city to spend some quality time
             with family and old friends on my home island Gotland. I'm generally
             a humble and caring person with a positiv attitude. Yep.
-          </p>
+          </p> */}
         </section>
       </section>
     </Section>
