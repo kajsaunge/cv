@@ -114,57 +114,57 @@
                 "experienceDesc": "I started off with administrative work which soon moved over to more graphic and digital work such as presentations, improvements on structure and content for their intranet.",
                 "experienceTakeaway": "Take away - it takes more than charm to reduce long lead times"
             }
-        }
-    },
-    "education": {
-        "imgSrc": "/cv-img.png",
-        "imgAlt": "Illustration of tools",
-        "title": "Education",
-        "description": "&courses",
-        "educationTypeProfessional": "Professional development",
-        "educationTypeOnline": "Online courses & training",
-        "schools": {
-            "billy": {
-                "date": "2007 - 2009",
-                "degree": "Associare degree of communication Design, 3 semesters",
-                "school": "Billy Blue. Sydney, Australien",
-                "schoolLink": "http://www.billyblue.edu.au/"
-            },
-            "bergs": {
-                "date": "2007",
-                "degree": "Associare degree of communication Design, 1 semester",
-                "school": "Bergs. Stockholm",
-                "schoolLink": "https://www.berghs.se/"
-            }
         },
-        "educationOnline": {
-            "iaap": {
-                "date": "2020",
-                "degree": "CPACC - Certified Professional in Accessibility Core Competency",
-                "school": "IAAP Certification",
-                "schoolLink": "https://www.accessibilityassociation.org"
+        "education": {
+            "imgSrc": "/cv-img.png",
+            "imgAlt": "Illustration of tools",
+            "title": "Education",
+            "description": "&courses",
+            "educationTypeProfessional": "Professional development",
+            "educationTypeOnline": "Online courses & training",
+            "schools": {
+                "billy": {
+                    "date": "2007 - 2009",
+                    "degree": "Associare degree of communication Design, 3 semesters",
+                    "school": "Billy Blue. Sydney, Australien",
+                    "schoolLink": "http://www.billyblue.edu.au/"
+                },
+                "bergs": {
+                    "date": "2007",
+                    "degree": "Associare degree of communication Design, 1 semester",
+                    "school": "Bergs. Stockholm",
+                    "schoolLink": "https://www.berghs.se/"
+                }
             },
-            "html": {
-                "date": "2014",
-                "degree": "HTML5 fundamentals + CSS3 in-depth & more",
-                "school": "Pluralsight",
-                "schoolLink": "https://www.pluralsight.com/"
-            },
-            "css": {
-                "date": "2015",
-                "degree": "CSS fundamentals. SASS basics. Github basics. CSS flexbox layout",
-                "school": "Treehouse",
-                "schoolLink": "https://teamtreehouse.com/library"
-            },
-            "react": {
-                "date": "2016-2017",
-                "degree": "React, React Native, GASP animations & more",
-                "school": "Plural, Egghead, Free code camp, Laracasta"
-            },
-            "node": {
-                "date": "2018",
-                "degree": "Node, NPM",
-                "school": "Plural, Codewars"
+            "educationOnline": {
+                "iaap": {
+                    "date": "2020",
+                    "degree": "CPACC - Certified Professional in Accessibility Core Competency",
+                    "school": "IAAP Certification",
+                    "schoolLink": "https://www.accessibilityassociation.org"
+                },
+                "html": {
+                    "date": "2014",
+                    "degree": "HTML5 fundamentals + CSS3 in-depth & more",
+                    "school": "Pluralsight",
+                    "schoolLink": "https://www.pluralsight.com/"
+                },
+                "css": {
+                    "date": "2015",
+                    "degree": "CSS fundamentals. SASS basics. Github basics. CSS flexbox layout",
+                    "school": "Treehouse",
+                    "schoolLink": "https://teamtreehouse.com/library"
+                },
+                "react": {
+                    "date": "2016-2017",
+                    "degree": "React, React Native, GASP animations & more",
+                    "school": "Plural, Egghead, Free code camp, Laracasta"
+                },
+                "node": {
+                    "date": "2018",
+                    "degree": "Node, NPM",
+                    "school": "Plural, Codewars"
+                }
             }
         }
     },

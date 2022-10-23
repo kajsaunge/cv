@@ -1,3 +1,109 @@
 .cv {
-  color: var(--mint);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: stretch;
+  width: 100%;
+  margin: 30px auto 50px;
+  padding: 0 5%;
+  color: var(--grey-dark);
 }
+.cvItem {
+  padding: 20px 0;
+  border-bottom: 2px solid var(--pine);
+  padding-bottom: 20px;
+  
+}
+.date {
+  font-size: 90%;
+  margin-bottom: -5px;
+}
+.cvTitle {
+  line-height: .9;
+  margin: 5px 0 5px 0;
+  text-transform: uppercase;
+}
+.cvTitle:first-child {
+  border-top: 0px solid var(--pine);
+}
+.link {
+  color: var(--pine-dark);
+}
+.link:hover {
+  color: var(--pine);
+  text-decoration: underline;
+}
+.cvDescription {
+  display: none;
+
+}
+.learning {
+  font-weight: bold;
+}
+
+.eduCategory {
+  text-transform: uppercase;
+  background-color: var(--yellow);
+  color: var(--white);
+  padding: 10px 20px 10px 20px;
+}
+.eduCategory:not(:first-child) {
+  margin-top: 50px;
+}
+  
+.eduItem {
+padding-bottom: 20px;
+padding-top: 20px;
+border-bottom: 2px solid var(--yellow);
+}
+.eduTitle {
+text-transform: uppercase;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+
+/* small */
+@media (min-width: 35em) { 
+  .cvDescription {
+    display: block;
+  }
+  .eduItem {
+    background-color: transparent;
+  }
+}
+/* medium */
+@media (min-width: 62.5em) { 
+  .cv {
+    width: 85%;
+  }
+  .cvItem {
+    background-color: transparent;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    padding-top: 0px;
+  }
+  .cv {
+    width: 85%;
+    padding: 0;
+  }
+  .eduCategory {
+    margin-bottom: 50px;
+    font-size: 22px; font-size: 2.2rem;
+  }
+  .eduItem {
+    border-left: 2px solid var(--yellow);
+    margin-bottom: 40px;
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 0px;
+    border-bottom: 0px solid var(--yellow);
+    }
+}
+/* large */
+@media (min-width: 103.750em) { 
+  .cv {
+    width: 65%;
+    max-width: 50%;
+  }
+}
+
