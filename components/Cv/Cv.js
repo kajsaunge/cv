@@ -2,6 +2,7 @@ import Section from "../Section/Section";
 import styles from "./Cv.module.css";
 import sectionStyles from "../Section/Section.module.css";
 import content from "../../pages/api/content.json";
+import Link from "next/link";
 
 const Cv = () => {
   const { sectionTitle, sectionDescription } = sectionStyles;
@@ -47,10 +48,15 @@ const Cv = () => {
                 <div key={i} className={cvItem}>
                   <p className={date}>{item.date}</p>
                   <h3 className={cvTitle}>{item.title}</h3>
-                  {!experience.companyLink ? (
+                  {!item.companyLink ? (
                     <p>{item.company}</p>
                   ) : (
-                    <a href={experience.companyLink} className={link}>
+                    <a
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      href={item.companyLink}
+                      className={link}
+                    >
                       {item.company}
                     </a>
                   )}
@@ -73,7 +79,12 @@ const Cv = () => {
                 {!item.schoolLink ? (
                   <p>{item.school}</p>
                 ) : (
-                  <a href={item.schoolLink} className={link}>
+                  <a
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href={item.schoolLink}
+                    className={link}
+                  >
                     {item.school}
                   </a>
                 )}
@@ -89,7 +100,12 @@ const Cv = () => {
                 {!item.schoolLink ? (
                   <p>{item.school}</p>
                 ) : (
-                  <a href={item.schoolLink} className={link}>
+                  <a
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href={item.schoolLink}
+                    className={link}
+                  >
                     {item.school}
                   </a>
                 )}
