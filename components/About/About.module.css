@@ -1,15 +1,24 @@
 .aboutContent {
   width: 60%;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .aboutText {
   width: 100%;
   padding-top: 20px;
   color: var(--white);
-    /* @include mf-medium {
-      width: 70%;
-    }
-    @include mf-large {
-      width: 50%;
-    } */
 }
+
+@media (min-width: 62.5em) { 
+  .aboutText {
+    width: 70%;
+  }
+}
+@media (min-width: 103.750em) {
+  .aboutText {
+    width: 50%;
+  }
+ }
