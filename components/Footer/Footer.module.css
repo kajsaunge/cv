@@ -33,6 +33,9 @@
     padding-right: 18%;
   }
 }
+.konst {
+  background: url('../../static/icon-konstunge.svg') top center no-repeat;
+}
 .codep {
   background: url('../../static/icon-codepen.svg') top center no-repeat;
 }

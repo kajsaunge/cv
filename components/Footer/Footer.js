@@ -2,10 +2,20 @@ import styles from "./Footer.module.css";
 import content from "../../pages/api/content.json";
 
 const Footer = () => {
-  const { footer, footerLink, codep, linked, insta, random, convert } = styles;
-  const { codepen, linkedin, instagram, randomize, converter } = content.footer;
+  const { footer, footerLink, konst, codep, linked, insta, random, convert } =
+    styles;
+  const { konstunge, codepen, linkedin, instagram, randomize, converter } =
+    content.footer;
   return (
     <footer className={footer}>
+      <a
+        href={konstunge.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={[footerLink, konst].join(" ")}
+      >
+        {konstunge.title}
+      </a>
       <a
         href={codepen.url}
         target="_blank"

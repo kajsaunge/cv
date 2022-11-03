@@ -21,6 +21,10 @@
         "contact": "Contact"
     },
     "footer": {
+        "konstunge": {
+            "title": "Konstunge",
+            "url": "https://konstunge.se"
+        },
         "codepen": {
             "title": "Codepen",
             "url": "https://codepen.io/kajsaunge/"
