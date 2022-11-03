@@ -22,7 +22,7 @@ const Contact = () => {
         imageAlt={imgAlt}
         imageSrc={imgSrc}
       >
-        <a href={phoneUrl} className={contactLinks}>
+        <a id="contact" href={phoneUrl} className={contactLinks}>
           {phonenumber}
         </a>
         <a href={mailTo} className={contactLinks}>

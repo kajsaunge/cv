@@ -12,7 +12,7 @@ import content from "./api/content.json";
 export default function Home() {
   const { title, description, font } = content.head;
   return (
-    <div className={styles.site}>
+    <div id="home" className={styles.site}>
       <Head>
         <title>{title}</title>
         <meta name={description.name} content={description.content} />
@@ -20,7 +20,6 @@ export default function Home() {
         <link href={font.lato} rel="stylesheet" type="text/css" />
         <link href={font.display} rel="stylesheet" type="text/css" />
       </Head>
-
       <Navigation />
       <main className={styles.main}>
         <About />

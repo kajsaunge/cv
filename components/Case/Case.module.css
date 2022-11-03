@@ -1,0 +1,384 @@
+.noscroll {
+  overflow: hidden;
+}
+.overlay {
+  background-color: var(--grey-dark);
+  overflow:scroll;
+  position:fixed;
+  height:100%;
+  width:100%;
+  top:0;
+  left:0;
+  /* transform:scale(0); */
+  z-index:10;
+  visibility: hidden;
+  display: none;
+  color: var(--white-white);
+  background-color: var(--white);
+  animation:unfoldOut .8s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+
+}
+.overlayActive {
+  /* transform:scaleY(.01) scaleX(0); */
+  animation:unfoldIn .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+  background-color: var(--grey-dark);
+  overflow:scroll;
+  position:fixed;
+  height:100%;
+  width:100%;
+  top:0;
+  left:0;
+  /* transform:scale(1); */
+  z-index:10;
+  visibility: visible;
+  display: flex;
+  color: var(--white-white);
+  /* opacity: 1; */
+}
+
+.projectView {
+  visibility: hidden;
+  display: none;
+  color: var(--white-white);
+  background-color: var(--white);
+  opacity: 0;
+}
+.projectViewActive {
+  visibility: visible;
+  display: block;
+  position: absolute;
+}
+
+@keyframes unfoldIn {
+  0% { transform:scaleY(.005) scaleX(0); }
+  40% { transform:scaleY(.005) scaleX(1); }
+  100% { transform:scaleY(1) scaleX(1); }
+}
+@keyframes unfoldOut {
+  0% { transform:scaleY(1) scaleX(1); opacity: 1;  }
+  50% { transform:scaleY(.005) scaleX(1); opacity: .5;}
+  100% { transform:scaleY(.005) scaleX(0); opacity: 0; }
+}
+
+.projectView.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    min-height: 1px;
+    margin: 0px auto;
+    background-color: var(--grey-dark);
+}
+.headerImg {
+      display: block;
+      width: auto;
+      max-width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+    .headerContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      align-items: flex-start;
+      padding: 50px 5% 0px 5%;
+    }
+
+  .tag {
+    text-transform: uppercase;
+  }
+  .quote {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px; font-size: 2.5rem;
+    font-style: italic;
+    line-height: 1.5;
+  }
+  .clientLink {
+    font-style: italic;
+    margin-bottom: 6px;
+    display: inline-block;
+
+    transition: all 0.5s ease;
+    letter-spacing: .2rem;
+    border-bottom: 1px solid darken(var(--yellow), 5%);
+    color: var(--white);
+    padding: 3px 0;
+  }
+  .clientLink:hover {
+      transition: all 0.3s ease;
+      color: darken(var(--yellow), 5%);
+      }
+    .clientLink:active {
+        transition: all 0.3s ease;
+        color: lighten(var(--yellow), 5%);
+      }
+
+  .projectTitleDescription {
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    margin: 0 auto 80px;
+    padding: 50px 5% 50px 5%;
+    background-color: var(--grey-dark);
+  }
+    .introColumn {
+      width: 100%;
+      margin-top: 3%;
+      padding: 0;
+    }
+
+.projectDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 auto;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 50px 5% 50px 5%;
+    color: var(--grey-dark);
+    background-color: var(--white);
+  }
+  .projectDetailsImg {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: 0 0;
+  }
+
+  .projectDetailsContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 40px;
+    color: var(--grey-dark);
+  }
+  .projectDetailsContent p {
+    margin-bottom: 20px;
+
+  }
+
+  .divider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: var(--grey-dark);
+    background-color: var(--white);
+  }
+  .dividerTitle {
+    margin: 40px 16px 10px;
+  }
+  .dividerDescription {
+    margin-bottom: 40px;
+    margin-right: 16px;
+    margin-left: 16px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .dividerImg {
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+    max-height: auto;
+    zoom: 80%;
+    min-height: 1px;
+    margin-bottom: 80px;
+  }
+
+  .dividerImgCallAbroad {
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+    max-height: auto;
+    zoom: 80%;
+    min-height: 1px;
+    margin-bottom: 0;
+    }
+  .summery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 30px;
+    background-color: var(--grey-dark);
+    padding-bottom: 80px;
+  }
+  .summery p {
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 10%;
+  }
+
+/* medium */
+@media (min-width: 62.5em) { 
+  .headerImg {
+      width: 100%;
+      height: auto;
+    }
+      .headerImgContent {
+        padding: 50px 3% 0px 3%;
+    }
+    .tag {
+        font-size: 20px; font-size: 2rem;
+    }
+    .quote {
+        font-size: 30px; font-size: 3.0rem;
+    }
+    .intro {
+        flex-direction: row;
+        padding: 50px 3% 80px 3%;
+    }
+    .introColumn {
+      padding-right: 2%;
+    }
+    .introColumn:last-of-type { 
+      padding-right: 0;
+    }
+      .projectDetails {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 50px 3% 50px 3%;
+      }
+      .projectDetailsContent {
+          margin-left: 16px;
+          margin-top: 20px;
+        }
+        .dividerImg, .dividerImgCallAbroad {
+          width: 50%;
+        }
+        .summery p {
+          width: 70%;
+        }
+  }
+  /* large */
+  @media (min-width: 103.750em) { 
+    .headerImgContent {
+      padding: 50px 5% 0px 5%;
+    }
+    .tag {
+      font-size: 20px; font-size: 2rem;
+    }
+    .quote {
+        font-size: 40px; font-size: 4.0rem;
+    }
+    .intro {
+      padding: 50px 5% 80px 5%;
+    }
+    .projectDetails {
+      padding: 50px 5% 50px 5%;
+    }
+    .projectDetailsImg {
+        width: 80%;
+      }
+      .dividerDescription {
+          font-size: 25px; font-size: 2.5rem;
+        }
+        .dividerImg, .dividerImgCallAbroad {
+          width: 50%;
+        }
+        .summery p {
+          width: 50%;
+          padding: 0 5%;
+        }
+}
+
+.closeButton {
+  visibility: hidden;
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 40px;
+  background: transparent;
+  box-shadow: none;
+  border: 0;
+  border-radius: none;
+  appearance: none;
+  -webkit-appearance: none;
+  transform:scale(0);
+}
+.closeButton:hover span:before {
+    transform: rotate(-135deg);
+  }
+  .closeButton:hover span:after {
+    transform: rotate(135deg);
+  }
+.closeButton {
+  z-index: 11;
+  visibility: visible;
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 40px;
+  background: transparent;
+  box-shadow: none;
+  border: 0;
+  border-radius: none;
+  appearance: none;
+  -webkit-appearance: none;
+  transform:scale(0);
+  transform-origin: center center;
+  animation: buttonfadeIn .2s ease 1s forwards;
+}
+.closeButton span {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 0;
+  text-indent: -9999px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 50%;
+  box-shadow: 0 1px 17px 1px rgba(0, 0, 0, .1);
+  transition: .2s;
+}
+
+.closeButton span:before, .closeButton span:after {
+  content: '';
+  position: absolute;
+  display: block;
+  background: var(--grey-dark);
+  width: 1px;
+  height: 16px;
+  top: 12px;
+  left: 19px;
+  transition: .3s ease-in;
+  cursor: pointer;
+}
+.closeButton span:before {
+  transform: rotate(45deg);
+}
+.closeButton span:after {
+  transform: rotate(-45deg);
+}
+
+@keyframes buttonfadeIn {
+  0% { transform:scale(0)}
+  90% { transform:scale(1.1)}
+  100% { transform:scale(1)}
+}

@@ -29,6 +29,8 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 55px; font-size: 5.5rem;
+  line-height: 1.2;
+  font-weight: 900;
 }
 h2 {
   font-size: 45px; font-size: 4.5rem;
@@ -48,7 +50,22 @@ h5 {
   font-size: 20px; font-size: 2rem;
   line-height: 1.1;
   font-weight: 700;
- 
+}
+/* medium */
+@media (min-width: 62.5em) { 
+  h1 { font-size: 75px; font-size: 7.5rem;}
+  h2 { font-size: 65px; font-size: 6.5rem;}
+  h3 { font-size: 40px; font-size: 4rem;}
+  h4 { font-size: 30px; font-size: 3rem;}
+  h5 { font-size: 25px; font-size: 2.5rem;}
+}
+/* large */
+@media (min-width: 103.750em) { 
+  h1 { font-size: 120px; font-size: 12rem;}
+  h2 { font-size: 85px; font-size: 8.5rem;}
+  h3 { font-size: 45px; font-size: 4.5rem;}
+  h4 { font-size: 35px; font-size: 3.5rem;}
+  h5 { font-size: 30px; font-size: 3rem;}
 }
 a {
   cursor: pointer;

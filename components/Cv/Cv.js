@@ -43,28 +43,26 @@ const Cv = () => {
       >
         {experience &&
           experienceList.map((item, i) => (
-            <>
-              <div key={i} className={cv}>
-                <div key={i} className={cvItem}>
-                  <p className={date}>{item.date}</p>
-                  <h3 className={cvTitle}>{item.title}</h3>
-                  {!item.companyLink ? (
-                    <p>{item.company}</p>
-                  ) : (
-                    <a
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      href={item.companyLink}
-                      className={link}
-                    >
-                      {item.company}
-                    </a>
-                  )}
-                  <p className={cvDescription}>{item.experienceDesc}</p>
-                  <p className={learning}>{item.experienceTakeaway}</p>
-                </div>
+            <div id="cv" key={i} className={cv}>
+              <div key={i} className={cvItem}>
+                <p className={date}>{item.date}</p>
+                <h3 className={cvTitle}>{item.title}</h3>
+                {!item.companyLink ? (
+                  <p>{item.company}</p>
+                ) : (
+                  <a
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href={item.companyLink}
+                    className={link}
+                  >
+                    {item.company}
+                  </a>
+                )}
+                <p className={cvDescription}>{item.experienceDesc}</p>
+                <p className={learning}>{item.experienceTakeaway}</p>
               </div>
-            </>
+            </div>
           ))}
         <h2 className={sectionTitle}>{education.title}</h2>
         <p className={sectionDescription}>{education.description}</p>

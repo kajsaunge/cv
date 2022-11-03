@@ -8,12 +8,14 @@ const Section = ({
   subDescription,
   children,
   darkTheme,
+  id,
 }) => (
   <>
     {darkTheme && (
       <img className={styles.sectionImage} alt={imageAlt} src={imageSrc} />
     )}
     <section
+      id={id}
       className={[
         styles.sectionWrapper,
         darkTheme && styles.sectionWrapperDark,
