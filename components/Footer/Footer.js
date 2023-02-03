@@ -40,14 +40,14 @@ const Footer = () => {
       >
         {instagram.title}
       </a>
-      <a
+      {/* <a
         href={randomize.url}
         target="_blank"
         rel="noopener noreferrer"
         className={[footerLink, random].join(" ")}
       >
         {randomize.title}
-      </a>
+      </a> */}
       <a
         href={converter.url}
         target="_blank"
