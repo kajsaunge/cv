@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;  
+  align-items: center;
   align-items: center;
   width: 100%;
   padding: 20px 30px;
@@ -33,8 +33,8 @@
     padding-right: 18%;
   }
 }
-.konst {
-  background: url('../../static/icon-konstunge.svg') top center no-repeat;
+.art {
+  background: url('../../static/icon-konst.svg') top center no-repeat;
 }
 .codep {
   background: url('../../static/icon-codepen.svg') top center no-repeat;
@@ -51,4 +51,3 @@
 .convert {
   background: url('../../static/icon-unit-converter.svg') top center no-repeat;
 }
-

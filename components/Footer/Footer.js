@@ -1,42 +1,42 @@
-import styles from "./Footer.module.css";
-import content from "../../pages/api/content.json";
+import styles from './Footer.module.css';
+import content from '../../pages/api/content.json';
 
 const Footer = () => {
-  const { footer, footerLink, konst, codep, linked, insta, random, convert } =
+  const { footer, footerLink, art, codep, linked, insta, random, convert } =
     styles;
-  const { konstunge, codepen, linkedin, instagram, randomize, converter } =
+  const { konst, codepen, linkedin, instagram, randomize, converter } =
     content.footer;
   return (
     <footer className={footer}>
       <a
-        href={konstunge.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={[footerLink, konst].join(" ")}
+        href={konst.url}
+        target='_blank'
+        rel='noopener noreferrer'
+        className={[footerLink, art].join(' ')}
       >
-        {konstunge.title}
+        {konst.title}
       </a>
       <a
         href={codepen.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={[footerLink, codep].join(" ")}
+        target='_blank'
+        rel='noopener noreferrer'
+        className={[footerLink, codep].join(' ')}
       >
         {codepen.title}
       </a>
       <a
         href={linkedin.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={[footerLink, linked].join(" ")}
+        target='_blank'
+        rel='noopener noreferrer'
+        className={[footerLink, linked].join(' ')}
       >
         {linkedin.title}
       </a>
       <a
         href={instagram.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={[footerLink, insta].join(" ")}
+        target='_blank'
+        rel='noopener noreferrer'
+        className={[footerLink, insta].join(' ')}
       >
         {instagram.title}
       </a>
@@ -50,9 +50,9 @@ const Footer = () => {
       </a> */}
       <a
         href={converter.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={[footerLink, convert].join(" ")}
+        target='_blank'
+        rel='noopener noreferrer'
+        className={[footerLink, convert].join(' ')}
       >
         {converter.title}
       </a>
