@@ -1,8 +1,8 @@
-import { useState } from "react";
-import Section from "../Section/Section";
-import styles from "./Cases.module.css";
-import content from "../../pages/api/content.json";
-import Case from "../Case/Case";
+import { useState } from 'react';
+import Section from '../Section/Section';
+import styles from './Cases.module.css';
+import content from '../../pages/api/content.json';
+import Case from '../Case/Case';
 
 const Cases = () => {
   const [activeCase, setActiveCase] = useState(null);
@@ -13,14 +13,15 @@ const Cases = () => {
     projects.push(content.projects[key]);
   }
   const colors = [
-    "#d3565e",
-    "#ff554d",
-    "#18ad93",
-    "#08715f",
-    "#39B6CC",
-    "#123456",
-    "#0A424C",
-    "#E5C333",
+    '#d3565e',
+    '#ff554d',
+    '#18ad93',
+    '#08715f',
+    '#39B6CC',
+    '#123456',
+    '#0A424C',
+    '#E5C333',
+    '#d3565e',
   ];
 
   return (
@@ -31,7 +32,7 @@ const Cases = () => {
         imageAlt={imgAlt}
         imageSrc={imgSrc}
       >
-        <div id="cases" className={cases}>
+        <div id='cases' className={cases}>
           {projects.map((project, i) => (
             <>
               <button

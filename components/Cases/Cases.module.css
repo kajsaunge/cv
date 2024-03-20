@@ -23,15 +23,16 @@
 .casesItem:hover img {
   opacity: 1;
   transform: scale(1.02);
-  transition-duration: .4s ease-in-out;
+  transition-duration: 0.4s ease-in-out;
 }
-.casesItem:hover h3, .casesItem:hover p {
+.casesItem:hover h3,
+.casesItem:hover p {
   color: var(--white);
   opacity: 1;
-  transition-duration: .4s ease-in-out;
+  transition-duration: 0.4s ease-in-out;
 }
 
-.casesItem__thumb, 
+.casesItem__thumb,
 .casesItem__title {
   display: flex;
   flex-direction: column;
@@ -45,22 +46,23 @@
   min-height: 350px;
 }
 .casesItem__title {
-  background: rgba(255, 255 ,255, .1);
+  background: rgba(255, 255, 255, 0.1);
 }
 .casesItem__title p {
-    padding: 10px;
-    text-transform: uppercase;
-    opacity: 0;
-    transition: 0.2s ease-in-out;
-    }
-    .casesItem__title h3 {
-    margin-bottom: -10px;
-    font-size: 45px; font-size: 4.5rem;
-    line-height: 1.2;
-    font-weight: 700;
-    transition: 0.2s ease-in-out;
-  }
-  .casesItem__thumb img {
+  padding: 10px;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+}
+.casesItem__title h3 {
+  margin-bottom: -6px;
+  font-size: 45px;
+  font-size: 4.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+  transition: 0.2s ease-in-out;
+}
+.casesItem__thumb img {
   width: 100%;
   max-width: 100%;
   zoom: 1 !important;
@@ -77,13 +79,14 @@
   }
 } */
 /* small */
-@media (min-width: 35em) { 
+@media (min-width: 35em) {
   .casesItem__title h3 {
-    font-size: 55px; font-size: 5.5rem;
+    font-size: 55px;
+    font-size: 5.5rem;
   }
 }
 /* medium */
-@media (min-width: 62.5em) { 
+@media (min-width: 62.5em) {
   .cases {
     flex-direction: row;
     flex-wrap: wrap;
@@ -91,16 +94,16 @@
   .casesItem {
     flex-direction: row-reverse;
   }
-  .casesItem__thumb, 
-.casesItem__title {
-  width: 50%;
-  min-height: 350px;
-  margin: 0 !important;
-  border: 0 !important;
-}
+  .casesItem__thumb,
+  .casesItem__title {
+    width: 50%;
+    min-height: 350px;
+    margin: 0 !important;
+    border: 0 !important;
+  }
 }
 /* large */
-@media (min-width: 103.750em) { 
+@media (min-width: 103.75em) {
   .cv {
     width: 65%;
     max-width: 50%;
@@ -109,6 +112,7 @@
     width: 50%;
   }
   .casesItem__title h3 {
-    font-size: 35px; font-size: 3.5rem;
+    font-size: 35px;
+    font-size: 3.5rem;
   }
 }
