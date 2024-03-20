@@ -72,7 +72,11 @@ const Case = ({ activeCase }) => {
             <div className={styles.intro}>
               <article className={styles.introColumn}>
                 <h2>{content.subHeadings.client}</h2>
-                <a href={activeCase.clientLink} className={styles.clientLink}>
+                <a
+                  target='_blank'
+                  href={activeCase.clientLink}
+                  className={styles.clientLink}
+                >
                   {activeCase.client}
                 </a>
                 <p>{activeCase.clientText}</p>
