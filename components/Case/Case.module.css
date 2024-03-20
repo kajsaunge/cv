@@ -101,18 +101,18 @@
     display: inline-block;
 
     transition: all 0.5s ease;
-    letter-spacing: .2rem;
-    border-bottom: 1px solid darken(var(--yellow), 5%);
+  letter-spacing: 0.2rem;
+  border-bottom: 1px solid var(--yellowDarker);
     color: var(--white);
     padding: 3px 0;
   }
   .clientLink:hover {
       transition: all 0.3s ease;
-      color: darken(var(--yellow), 5%);
+  color: var(--yellowDarker);
       }
     .clientLink:active {
         transition: all 0.3s ease;
-        color: lighten(var(--yellow), 5%);
+  color: var(--yellow);
       }
 
   .projectTitleDescription {
