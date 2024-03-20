@@ -74,6 +74,7 @@ const Case = ({ activeCase }) => {
                 <h2>{content.subHeadings.client}</h2>
                 <a
                   target='_blank'
+                  rel="noreferrer"
                   href={activeCase.clientLink}
                   className={styles.clientLink}
                 >
