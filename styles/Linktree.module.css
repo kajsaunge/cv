@@ -41,6 +41,7 @@
   color: var(--grey-dark);
   text-shadow: rgba(0, 0, 0, 0.14) 0px 3px 4px;
 }
+
 @media (min-width: 859px) {
   .main {
     display: flex;
