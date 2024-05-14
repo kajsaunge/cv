@@ -1,5 +1,5 @@
 .aboutContent {
-  width: 60%;
+  width: 90%;
   padding-bottom: 30px;
   display: flex;
   flex-direction: column;
@@ -12,13 +12,16 @@
   color: var(--white);
 }
 
-@media (min-width: 62.5em) { 
+@media (min-width: 62.5em) {
   .aboutText {
     width: 70%;
   }
+  .aboutContent {
+    width: 60%;
+  }
 }
-@media (min-width: 103.750em) {
+@media (min-width: 103.75em) {
   .aboutText {
     width: 50%;
   }
- }
+}

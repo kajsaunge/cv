@@ -1,18 +1,18 @@
 .sectionWrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 40px;
-    padding: 50px 0 70px;
-    background-color: var(--white);
-    color: var(--grey-dark);
-    margin: 80 0;
-    padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+  padding: 50px 0 70px;
+  background-color: var(--white);
+  color: var(--grey-dark);
+  margin: 80 0;
+  padding-bottom: 30px;
 }
 .sectionWrapperDark {
-    background-color: var(--grey-dark);
-    color: var(--white);
+  background-color: var(--grey-dark);
+  color: var(--white);
 }
 .sectionLinks {
   display: flex;
@@ -53,25 +53,28 @@
 .sectionSubDescription {
   text-transform: uppercase;
   font-size: 16px;
+  text-align: center;
+  max-width: 90%;
 }
 /* .section-description--white {
   color:  var(--white);
 } */
 
-
-@media (min-width: 62.5em) { 
+@media (min-width: 62.5em) {
   .sectionImage {
     width: 50%;
   }
 }
-@media (min-width: 103.750em) { 
+@media (min-width: 103.75em) {
   .sectionImage {
     width: 50%;
   }
   .sectionTitle {
-    font-size: 75px; font-size: 7.5rem;
+    font-size: 75px;
+    font-size: 7.5rem;
   }
   .sectionDescription {
-    font-size: 25px; font-size: 2.5rem;
+    font-size: 25px;
+    font-size: 2.5rem;
   }
 }
