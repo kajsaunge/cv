@@ -34,23 +34,21 @@ const Cases = () => {
       >
         <div id='cases' className={cases}>
           {projects.map((project, i) => (
-            <>
-              <button
-                key={i}
-                id={project.id}
-                className={casesItem}
-                style={{ background: colors[i] }}
-                onClick={() => setActiveCase(project)}
-              >
-                <div className={casesItem__title}>
-                  <h3>{project.title}</h3>
-                  <p>{project.tags}</p>
-                </div>
-                <div className={casesItem__thumb}>
-                  <img src={project.thumb} alt={project.thumbAlt} />
-                </div>
-              </button>
-            </>
+            <button
+              key={i}
+              id={project.id}
+              className={casesItem}
+              style={{ background: colors[i] }}
+              onClick={() => setActiveCase(project)}
+            >
+              <div className={casesItem__title}>
+                <h3>{project.title}</h3>
+                <p>{project.tags}</p>
+              </div>
+              <div className={casesItem__thumb}>
+                <img src={project.thumb} alt={project.thumbAlt} />
+              </div>
+            </button>
           ))}
         </div>
         {activeCase && <Case activeCase={activeCase} />}
