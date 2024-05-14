@@ -127,6 +127,12 @@
       "educationTypeProfessional": "Professional development",
       "educationTypeOnline": "Online courses & training",
       "schools": {
+        "agesta": {
+          "date": "2023 - 2034",
+          "degree": "Konstlinje - Måleri & keramik",
+          "school": "Ågesta Folkhögskola. Stockholm",
+          "schoolLink": "https://www.agesta.nu/utbildningar/konstlinjen/index.html"
+        },
         "billy": {
           "date": "2007 - 2009",
           "degree": "Associare degree of communication Design, 3 semesters",
@@ -191,6 +197,7 @@
   },
   "projects": {
     "konst": {
+      "hasLink": "https://konst.kajsaunge.se",
       "id": "konst",
       "title": "Galleri Unge",
       "tags": "web",
