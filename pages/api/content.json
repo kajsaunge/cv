@@ -71,6 +71,13 @@
     "title": "Cv",
     "description": "& work experience",
     "experience": {
+      "freelance": {
+        "date": "January 2009 - ongoing",
+        "title": "Graphic designer and illustrator",
+        "company": "kajsaunge, freelance, Stockhom",
+        "experienceDesc": "a broad mix of graphic design work such as logos, prints, illustrations, smaller web sites, photoretuching and digital art.",
+        "experienceTakeaway": "Take away - fun, fun, fun and time is money"
+      },
       "29k": {
         "date": "August 2021 - September 2023",
         "title": "App developer",
@@ -94,13 +101,6 @@
         "companyLink": "https://crimson.se/",
         "experienceDesc": "Great creative freedom with of responsibility for branding and marketing. This involved creating ads, designs for striping trucks, layout and art for showrooms, planning and executing events, expos and photoshoots. The role grew to also include designing and building web services, internal systems and product development.",
         "experienceTakeaway": "Take away - I got a good insight in the photo- and print production. This is also where my developer journey started."
-      },
-      "freelance": {
-        "date": "January 2009 - ongoing",
-        "title": "Graphic designer and illustrator",
-        "company": "kajsaunge, freelance, Stockhom",
-        "experienceDesc": "a broad mix of graphic design work such as logos, prints, illustrations, smaller web sites, photoretuching and digital art.",
-        "experienceTakeaway": "Take away - time is money"
       },
       "adecco": {
         "date": "2011 - 2012",
@@ -127,6 +127,12 @@
       "educationTypeProfessional": "Professional development",
       "educationTypeOnline": "Online courses & training",
       "schools": {
+        "belicenced": {
+          "date": "2025",
+          "degree": "Sound production - Pro Tools & Logic Pro",
+          "school": "Be Licensed. Stockholm",
+          "schoolLink": "https://www.be-licensed.com/"
+        },
         "agesta": {
           "date": "2023 - 2024",
           "degree": "Konstlinje - Måleri & keramik",
