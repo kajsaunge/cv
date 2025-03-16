@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
-import content from "../../pages/api/content.json";
-import styles from "./Case.module.css";
+import { useEffect, useState } from 'react';
+import content from '../../pages/api/content.json';
+import styles from './Case.module.css';
 
 const useFade = (initial) => {
   const [show, setShow] = useState(initial);
@@ -17,7 +17,7 @@ const useFade = (initial) => {
   };
 
   const style = {
-    animation: `${show ? styles.unfoldIn : styles.unfoldOut} .8s`,
+    animation: `${show ? styles.unfoldIn : styles.unfoldOut} .4s`,
   };
 
   // These props go on the fading DOM element
@@ -74,7 +74,7 @@ const Case = ({ activeCase }) => {
                 <h2>{content.subHeadings.client}</h2>
                 <a
                   target='_blank'
-                  rel="noreferrer"
+                  rel='noreferrer'
                   href={activeCase.clientLink}
                   className={styles.clientLink}
                 >
@@ -142,7 +142,7 @@ const Case = ({ activeCase }) => {
               </p>
               <img
                 className={
-                  activeCase.id === "callabroad"
+                  activeCase.id === 'callabroad'
                     ? styles.dividerImgCallAbroad
                     : styles.dividerImg
                 }
