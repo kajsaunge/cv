@@ -42,19 +42,12 @@
   border: 0px inset #ffd60a;
 }
 .card:first-child {
-  background-image: radial-gradient(
+  background: radial-gradient(
     ellipse farthest-corner at var(--x) 0%,
     #e9e1ba 0%,
     #0aff1a 50%,
     #ffd60a 100%
   );
-  background: radial-gradient(
-      ellipse farthest-corner at var(--x) 0%,
-      #e9e1ba 0%,
-      #0aff1a 50%,
-      #ffd60a 100%
-    ),
-    -webkit-radial-gradient(#e9e1ba 0%, #0aff1a 50%, #ffd60a 100%) !important;
 }
 .card:first-child:hover,
 .card:first-child:focus,
@@ -65,12 +58,11 @@
 
 .card:last-child {
   background: radial-gradient(
-      ellipse farthest-corner at var(--x) 90%,
-      #ffd60a 0%,
-      #0aff1a 50%,
-      #e9e1ba 100%
-    ),
-    -webkit-radial-gradient(#0aff1a 0%, #ffd60a 100%) !important;
+    ellipse farthest-corner at 0% 90%,
+    #ffd60a 0%,
+    #0aff1a 50%,
+    #e9e1ba 100%
+  );
 }
 .card:last-child:hover,
 .card:last-child:focus,
