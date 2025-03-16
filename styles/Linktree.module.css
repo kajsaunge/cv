@@ -25,12 +25,6 @@
   padding: 2.5rem;
 }
 
-@property --x {
-  syntax: '<percentage>';
-  inherits: false;
-  initial-value: 0%;
-}
-
 .card {
   box-sizing: border-box;
   border: 0;
@@ -43,7 +37,7 @@
 }
 .card:first-child {
   background: radial-gradient(
-    ellipse farthest-corner at var(--x) 0%,
+    ellipse farthest-corner at 0%,
     #e9e1ba 0%,
     #0aff1a 50%,
     #ffd60a 100%
@@ -88,10 +82,10 @@
 @media (min-width: 859px) {
   .main {
     display: flex;
-    flex-direction: column;
     justify-content: center;
   }
   .grid {
+    flex-direction: row;
     align-items: center;
   }
   .card {
