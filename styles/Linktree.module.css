@@ -47,7 +47,7 @@
     #e9e1ba 0%,
     #0aff1a 50%,
     #ffd60a 100%
-  );
+  ) !important;
 }
 .card:first-child:hover,
 .card:first-child:focus,
@@ -62,7 +62,7 @@
     #ffd60a 0%,
     #0aff1a 50%,
     #e9e1ba 100%
-  );
+  ) !important;
 }
 .card:last-child:hover,
 .card:last-child:focus,
