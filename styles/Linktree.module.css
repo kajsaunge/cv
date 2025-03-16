@@ -21,11 +21,53 @@
 
 .card {
   border: 0;
-  background: #ffd60a;
   position: relative;
   width: 100%;
   height: 40vh;
   cursor: pointer;
+}
+
+@property --x {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 0%;
+}
+
+.card {
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 50vh;
+  transition: 0.2s;
+  border: 0px inset #ffd60a;
+}
+.card:first-child {
+  background: radial-gradient(
+    ellipse farthest-corner at var(--x) 0%,
+    #e9e1ba 0%,
+    #0aff1a 50%,
+    #ffd60a 100%
+  );
+}
+.card:first-child:hover,
+.card:first-child:focus,
+.card:first-child:active {
+  transition: 0.7s;
+  border: 70px inset #0aff1a;
+}
+
+.card:last-child {
+  background: radial-gradient(
+    ellipse farthest-corner at var(--x) 90%,
+    #ffd60a 0%,
+    #0aff1a 50%,
+    #e9e1ba 100%
+  );
+}
+.card:last-child:hover,
+.card:last-child:focus,
+.card:last-child:active {
+  transition: 0.7s;
+  border: 70px inset #ffd60a;
 }
 
 .cardTitle {
