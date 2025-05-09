@@ -21,39 +21,38 @@
   text-transform: uppercase;
   background-color: transparent;
   cursor: pointer;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
 }
 
 .homeLinkLogo {
-    height: auto !important;
-    width:  30px;
-  }
-  .navigationLink:hover {
-    color: white;
-    border-bottom: 2px solid var(--yellow);
-  }
-  .navigationLink:active {
-    border-bottom: 2px solid var(--yellow);
-    font-weight: bold;
-  }
+  height: auto !important;
+  width: 30px;
+}
+.navigationLink:hover {
+  color: var(--white);
+  border-bottom: 2px solid var(--yellow);
+}
+.navigationLink:active {
+  border-bottom: 2px solid var(--yellow);
+  font-weight: bold;
+}
 
-  .homeLink {
-    display: inline-block;
-    position: absolute;
-    position: fixed;
-    left: 16px;
-    transition: .1s !important;
-    opacity: 1;
-    top: 10px;
+.homeLink {
+  display: inline-block;
+  position: absolute;
+  position: fixed;
+  left: 16px;
+  transition: 0.1s !important;
+  opacity: 1;
+  top: 10px;
+}
+.homeLink:hover {
+  border-bottom: 0 solid transparent;
+}
 
-  }
-  .homeLink:hover {
-    border-bottom: 0 solid transparent;
-  }
-
-  @media (max-width: 600px) {
+@media (max-width: 600px) {
   .navigation {
-    justify-content: center;
+    justify-content: flex-end;
   }
   .navigation a {
     padding: 5px 20px;
@@ -73,11 +72,11 @@
   background-size: 110px auto;
   position: fixed;
 }
-@media (min-width: 103.750em) { 
+@media (min-width: 103.75em) {
   .siteHeader {
-  background-size: 170px auto;
-  margin: 36px auto 0;
-}
+    background-size: 170px auto;
+    margin: 36px auto 0;
+  }
 }
 /* :empty:not(img):not(header):not(#overlay) {
   display: none;

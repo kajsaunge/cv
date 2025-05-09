@@ -1,7 +1,6 @@
-import Image from "next/image.js";
-import Section from "../Section/Section";
-import styles from "./About.module.css";
-import content from "../../pages/api/content.json";
+import Section from '../Section/Section';
+import styles from './About.module.css';
+import content from '../../pages/api/content.json';
 
 const About = () => {
   const {
@@ -23,7 +22,7 @@ const About = () => {
       description={author}
       subDescription={description}
     >
-      <section id="about" className={styles.aboutContent}>
+      <section id='about' className={styles.aboutContent}>
         <p className={styles.aboutText}>{aboutTextOne}</p>
         <p className={styles.aboutText}>{aboutTextTwo}</p>
         <p className={styles.aboutText}>{aboutTextThree}</p>

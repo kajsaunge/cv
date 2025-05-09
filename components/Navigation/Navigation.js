@@ -1,5 +1,5 @@
-import styles from "./Navigation.module.css";
-import content from "../../pages/api/content.json";
+import styles from './Navigation.module.css';
+import content from '../../pages/api/content.json';
 
 const Navigation = () => {
   const {
@@ -21,7 +21,7 @@ const Navigation = () => {
     const frames = 16;
     const adjustedEndLocation =
       distance < 0
-        ? id === "body"
+        ? id === 'body'
           ? endLocation
           : endLocation - 140 * 2
         : endLocation - 140;
@@ -41,10 +41,10 @@ const Navigation = () => {
         adjustedEndLocation >= startLocation
           ? current < previous
             ? clearInterval(runAnimation)
-            : ""
+            : ''
           : current > previous
           ? clearInterval(runAnimation)
-          : "";
+          : '';
       }
     };
 
@@ -81,21 +81,21 @@ const Navigation = () => {
     <div>
       <nav id={id} className={navigation}>
         <button
-          onClick={() => onClick("home")}
-          className={[homeLink, navigationLink].join(" ")}
+          onClick={() => onClick('home')}
+          className={[homeLink, navigationLink].join(' ')}
         >
           <img src={imgSrc} alt={imgAlt} className={homeLinkLogo} />
         </button>
-        <button onClick={() => onClick("about")} className={navigationLink}>
+        <button onClick={() => onClick('about')} className={navigationLink}>
           {about}
         </button>
-        <button onClick={() => onClick("cases")} className={navigationLink}>
+        <button onClick={() => onClick('cases')} className={navigationLink}>
           {cases}
         </button>
-        <button onClick={() => onClick("cv")} className={navigationLink}>
+        <button onClick={() => onClick('cv')} className={navigationLink}>
           {cv}
         </button>
-        <button onClick={() => onClick("contact")} className={navigationLink}>
+        <button onClick={() => onClick('contact')} className={navigationLink}>
           {contact}
         </button>
       </nav>
