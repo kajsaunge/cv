@@ -12,14 +12,13 @@
   padding: 20px 0;
   border-bottom: 2px solid var(--pine);
   padding-bottom: 20px;
-  
 }
 .date {
   font-size: 90%;
   margin-bottom: -5px;
 }
 .cvTitle {
-  line-height: .9;
+  line-height: 0.9;
   margin: 5px 0 5px 0;
   text-transform: uppercase;
 }
@@ -35,7 +34,6 @@
 }
 .cvDescription {
   display: none;
-
 }
 .learning {
   font-weight: bold;
@@ -50,20 +48,20 @@
 .eduCategory:not(:first-child) {
   margin-top: 50px;
 }
-  
+
 .eduItem {
-padding-bottom: 20px;
-padding-top: 20px;
-border-bottom: 2px solid var(--yellow);
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 2px solid var(--yellow);
 }
 .eduTitle {
-text-transform: uppercase;
-margin-top: 5px;
-margin-bottom: 5px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 /* small */
-@media (min-width: 35em) { 
+@media (min-width: 35em) {
   .cvDescription {
     display: block;
   }
@@ -72,7 +70,7 @@ margin-bottom: 5px;
   }
 }
 /* medium */
-@media (min-width: 62.5em) { 
+@media (min-width: 62.5em) {
   .cv {
     width: 85%;
   }
@@ -88,7 +86,8 @@ margin-bottom: 5px;
   }
   .eduCategory {
     margin-bottom: 50px;
-    font-size: 22px; font-size: 2.2rem;
+    font-size: 22px;
+    font-size: 2.2rem;
   }
   .eduItem {
     border-left: 2px solid var(--yellow);
@@ -97,13 +96,12 @@ margin-bottom: 5px;
     padding-left: 20px;
     padding-right: 0px;
     border-bottom: 0px solid var(--yellow);
-    }
+  }
 }
 /* large */
-@media (min-width: 103.750em) { 
+@media (min-width: 103.75em) {
   .cv {
     width: 65%;
     max-width: 50%;
   }
 }
-

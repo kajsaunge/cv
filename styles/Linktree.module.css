@@ -32,37 +32,49 @@
   height: 48%;
   cursor: pointer;
   cursor: pointer;
-  transition: 0.2s;
-  border: 0px inset #ffd60a;
+  border-radius: 4px;
 }
 .card:first-child {
-  background: radial-gradient(
-    ellipse farthest-corner at 0%,
-    #e9e1ba 0%,
-    #0aff1a 50%,
-    #ffd60a 100%
+  background: linear-gradient(
+    45deg,
+    var(--2025-orange),
+    var(--2025-pink),
+    var(--2025-blue),
+    var(--2025-green)
   );
+  background-size: 400% 400%;
 }
 .card:first-child:hover,
 .card:first-child:focus,
 .card:first-child:active {
-  transition: 0.7s;
-  border: 60px inset #0aff1a;
+  animation: gradient 15s ease infinite;
 }
 
 .card:last-child {
-  background: radial-gradient(
-    ellipse farthest-corner at 0% 90%,
-    #ffd60a 0%,
-    #0aff1a 50%,
-    #e9e1ba 100%
+  background: linear-gradient(
+    -45deg,
+    var(--2025-orange),
+    var(--2025-pink),
+    var(--2025-blue),
+    var(--2025-green)
   );
+  background-size: 400% 400%;
 }
 .card:last-child:hover,
 .card:last-child:focus,
 .card:last-child:active {
-  transition: 0.7s;
-  border: 60px inset #ffd60a;
+  animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .cardTitle {
@@ -75,7 +87,7 @@
   font-weight: 900;
   line-height: 1;
   margin-bottom: 0.7rem;
-  color: var(--grey-dark);
+  color: var(--white);
   text-shadow: rgba(0, 0, 0, 0.14) 0px 3px 4px;
 }
 

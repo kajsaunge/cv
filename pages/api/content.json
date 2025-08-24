@@ -71,16 +71,24 @@
     "title": "Cv",
     "description": "& work experience",
     "experience": {
+      "vroom": {
+        "date": "August 2025 - ongoing",
+        "title": "UX Lead & Developer",
+        "company": "Vroom, Stockhom",
+        "companyLink": "https://web.vroom.nu/",
+        "experienceDesc": "Vroom is a company delivering innovative mobility and automotive solutions with a strong focus on business value and data-driven analysis, I work as UX Lead and Developer, responsible for designing user-centered digital experiences, leading the UX process, and developing front-end solutions to ensure seamless and impactful products.",
+        "experienceTakeaway": "Take away - how incredably interesting, the automotive industry and everything around it"
+      },
       "freelance": {
         "date": "January 2009 - ongoing",
-        "title": "Frontend developer, Designer and Illustrator",
+        "title": "Frontend developer, Designer & Illustrator",
         "company": "Kajsa unge, freelance, Stockhom",
         "experienceDesc": "A broad mix of design work such as logos, layouts, prints, illustrations, ui-design, smaller web sites, photoretuching and digital art.",
         "experienceTakeaway": "Take away - fun, fun, fun and time is money"
       },
       "29k": {
         "date": "August 2021 - September 2023",
-        "title": "App developer",
+        "title": "App Developer",
         "company": "29k, Stockhom",
         "companyLink": "https://29k.org/",
         "experienceDesc": "Part of an amazing cross functional team making evidence-based psychological tools scalable, lovable, and free. More specifically developing a React native app, available on App store and Play store.",
@@ -88,7 +96,7 @@
       },
       "futurice": {
         "date": "September 2016 - July 2021",
-        "title": "UI/UX designer & Frontend developer",
+        "title": "UI/UX Designer & Frontend Developer",
         "company": "Futurice, Stockhom",
         "companyLink": "https://futurice.com/",
         "experienceDesc": "I vissa projekt arbetar jag primärt med design, i andra främst med utveckling. Allt som oftast blir det ändå både designande och kodande, det går ju hand i hand. Futurice är ett toppenställe med härlig kultur och generositet på alla sätt. Massor med frihet och ansvar.",
@@ -96,7 +104,7 @@
       },
       "crimson": {
         "date": "2012 - August 2016",
-        "title": "Art director",
+        "title": "Art Director",
         "company": "Crimson, Stockhom",
         "companyLink": "https://crimson.se/",
         "experienceDesc": "Great creative freedom with of responsibility for branding and marketing. This involved creating ads, designs for striping trucks, layout and art for showrooms, planning and executing events, expos and photoshoots. The role grew to also include designing and building web services, internal systems and product development.",

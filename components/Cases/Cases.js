@@ -13,15 +13,15 @@ const Cases = () => {
     projects.push(content.projects[key]);
   }
   const colors = [
-    '#d3565e',
+    '#e73c7e',
     '#ff554d',
+    '#ee7752',
+    '#23d5ab',
     '#18ad93',
-    '#08715f',
     '#39B6CC',
-    '#123456',
-    '#0A424C',
+    '#23a6d5',
     '#E5C333',
-    '#d3565e',
+    '#e73c7e',
   ];
 
   return (
