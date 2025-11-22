@@ -78,7 +78,7 @@ const Navigation = () => {
     const runAnimation = setInterval(animateScroll, frames);
   };
   return (
-    <div>
+    <>
       <nav id={id} className={navigation}>
         <button
           onClick={() => onClick('home')}
@@ -100,7 +100,7 @@ const Navigation = () => {
         </button>
       </nav>
       <header className={siteHeader}></header>
-    </div>
+    </>
   );
 };
 
